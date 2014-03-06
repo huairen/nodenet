@@ -1,0 +1,5 @@
+#ifndef NODENET_CONNECTION_H
+#define NODENET_CONNECTION_H
+
+
+#endif
