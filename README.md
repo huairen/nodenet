@@ -17,3 +17,7 @@ env: 维护环境变量
 2.线程模块
 3.消息分发机制
 4.节点管理
+
+
+使用Linux内核代码风格
+https://www.kernel.org/doc/Documentation/zh_CN/CodingStyle
