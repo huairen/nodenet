@@ -21,3 +21,7 @@ env: 维护环境变量
 
 使用Linux内核代码风格
 https://www.kernel.org/doc/Documentation/zh_CN/CodingStyle
+
+活动图
+
+![NODE_ACTIVITY](/doc/note_seq.png)
