@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include <stdio.h>
 
-#include "env.h"
+#include "nodenet.h"
 
 
 char* trim(char* src)
@@ -65,5 +65,6 @@ int main(int argc, char *argv[])
 		set_potion(argv[i]);
 
 	load_configure();
+	nodenet_startup();
 	return 0;
 }

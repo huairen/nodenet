@@ -57,4 +57,6 @@ const char * nodenet_getenv(const char *key)
 			return NULL;
 		}
 	}
+
+	return NULL;
 }
