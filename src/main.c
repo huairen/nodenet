@@ -25,14 +25,14 @@ char* trim(char* src)
 	return src;
 }
 
-void set_potion(const char *potion)
+void set_option(const char *option)
 {
 	char key[64];
 	char value[64];
 
-	const char *eq = strchr(potion,'=');
-	strncpy(key, potion, eq - potion);
-	key[eq - potion] = 0;
+	const char *eq = strchr(option,'=');
+	strncpy(key, option, eq - option);
+	key[eq - option] = 0;
 
 	strcpy(value, eq+1);
 	nodenet_setenv(trim(key),trim(value));
@@ -52,7 +52,7 @@ void load_configure()
 
 	while(!feof(pf)) {
 		fgets(tmp,sizeof(tmp),pf);
-		set_potion(tmp);
+		set_option(tmp);
 	}
 
 	fclose(pf);
@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 {
 	int i=1;
 	for (;i<argc; ++i)
-		set_potion(argv[i]);
+		set_option(argv[i]);
 
 	load_configure();
 	nodenet_startup();
